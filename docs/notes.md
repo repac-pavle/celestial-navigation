@@ -1,0 +1,19 @@
+- Zenith
+  - Highest point in the sky
+- Horizon
+  - Celestial horizon (90 degrees below zenith)
+  - True horizon
+    - Lowest point of the sky, where it meets the ground
+    - Based on height of eye and curvature of the earth
+---
+- Declination (of celestial body)
+  - Angle of elevation from the horizon
+- Right ascension
+---
+- Local measures
+  - Bearing (of celestial body)
+    - Azimuth 
+  - Altitude
+    - Height above celestial horizon
+  - Zenith altitude 
+    - Angle between zenith and cel. body, 90 deg - altitude
