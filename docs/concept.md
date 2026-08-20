@@ -27,9 +27,11 @@ Latitude can be determined in multiple ways:
       - Convert azimuth to sidereal hour angle (declination complement)
 
 ---
+### 2.1 Computation of expected celestial body altitude and azimuth
 For the altitude:
 
 $$sin(Hc) = \sin(Lat) \cdot \sin(Dec) + \cos(Lat) \cdot \cos(Dec) \cdot \cos(LHA) $$
+
 Where:
 - $Lat$ - latitude (North > 0, South < 0 )
 - $Lon$ - longitude (East > 0, South < 0)
@@ -56,13 +58,21 @@ Where:
 
 Compare the calculated altitude and azimuth against measured altitude $Ho$ and measured azimuth $Zo$
 
-# 
+$$Intercept = Ho - Hc$$
 
-## 3. 
+Difference in arc-minutes equals the distance from the Assumed Position in nautical miles.
 
-## 4. Nautical almanac
+The Line of Position is a line drawn perpendicular to the azimuth of the celestial body (calculated or measured?)
+The Line of Position is moved along the azimuth towards ($Ho > Hc \Rightarrow Intercept > 0$) or away ($Ho < Hc \Rightarrow Intercept < 0$) from the observed
+celestial body.
+
+Lines of Position must be transferred to the same position if taken at different times and different positions.
+That is achieved by taking the ship heading, speed and time difference in measurement, and moving the LOP accordingly
+
+At least 3 Lines of Position provide a reliable position fix.
 
 
+After this, a bearing and distance is measured from the Assumed Position towards the position fix.
 
 ## 99999. Misc notes
 - Use Stellarium for measurements
